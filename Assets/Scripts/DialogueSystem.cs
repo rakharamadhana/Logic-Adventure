@@ -21,6 +21,7 @@ public class DialogueSystem : MonoBehaviour
     public float typingSpeed;
 
     public GameObject answerContainer;
+    public QuestionManager questionManager;
 
     public GameObject continueButton;
     public GameObject previousButton;
@@ -43,9 +44,16 @@ public class DialogueSystem : MonoBehaviour
         }
         else if (textDisplay.text == sentences[index].content && index == sentences.Length - 1 && sentences[index].isQuestion) // Jika dialogue selesai dan merupakan pertanyaan
         {
-            previousButton.SetActive(true);
-            answerContainer.SetActive(true);
-            Debug.Log("Question Time");
+            if (!questionManager.isAnswered)
+            {
+                previousButton.SetActive(true);
+                answerContainer.SetActive(true);
+            }
+            else
+            {
+                previousButton.SetActive(false);
+                answerContainer.SetActive(false);
+            }
         }
         else if (textDisplay.text == sentences[index].content && index == sentences.Length - 1) // Jika dialogue selesai dan ingin pindah scene berikutnya
         {
@@ -67,6 +75,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void NextSentence()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         textDisplayAnim.SetTrigger("NextSentence");
         continueButton.SetActive(false);
         previousButton.SetActive(false);
@@ -85,6 +94,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void PreviousSentence()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         textDisplayAnim.SetTrigger("NextSentence");
         continueButton.SetActive(false);
         previousButton.SetActive(false);

@@ -11,6 +11,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNextScene()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         StartCoroutine(LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
