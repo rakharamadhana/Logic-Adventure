@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             PlayerPrefs.SetInt("score", 0);
         }

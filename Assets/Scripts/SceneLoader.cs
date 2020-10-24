@@ -9,10 +9,28 @@ public class SceneLoader : MonoBehaviour
 
     public float transitionTime = 1f;
 
+    public void StartGame()
+    {
+        FindObjectOfType<AudioManager>().Play("Click");
+        StartCoroutine(LoadScene(1));
+    }
+
     public void LoadNextScene()
     {
         FindObjectOfType<AudioManager>().Play("Click");
         StartCoroutine(LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    public void BackToMainMenu()
+    {
+        FindObjectOfType<AudioManager>().Play("Click");
+        StartCoroutine(LoadScene(0));
+    }
+
+    public void ExitGame()
+    {
+        FindObjectOfType<AudioManager>().Play("Click");
+        Application.Quit();
     }
 
     IEnumerator LoadScene(int sceneIndex)
