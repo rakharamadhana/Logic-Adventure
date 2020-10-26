@@ -17,7 +17,12 @@ public class DialogueSystem : MonoBehaviour
 
     public Sentence[] sentences = new Sentence[0];
 
-    private int index;
+    [HideInInspector]
+    public int index;
+
+    [HideInInspector]
+    public int answerIndex;
+
     public float typingSpeed;
 
     public GameObject answerContainer;
@@ -31,6 +36,7 @@ public class DialogueSystem : MonoBehaviour
     void Start()
     {
         answerContainer.SetActive(false);
+
         StartCoroutine(Type());
     }
 
@@ -45,13 +51,13 @@ public class DialogueSystem : MonoBehaviour
         else if (textDisplay.text == sentences[index].content && index == sentences.Length - 1 && sentences[index].isQuestion) // Jika dialogue selesai dan merupakan pertanyaan
         {
             if (!questionManager.isAnswered)
-            {
-                previousButton.SetActive(true);
+            {               
+                if(previousButton) previousButton.SetActive(true);
                 answerContainer.SetActive(true);
             }
             else
             {
-                previousButton.SetActive(false);
+                if (previousButton) previousButton.SetActive(false);
                 answerContainer.SetActive(false);
             }
         }

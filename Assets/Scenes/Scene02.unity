@@ -877,6 +877,7 @@ GameObject:
   - component: {fileID: 753713371}
   - component: {fileID: 753713370}
   - component: {fileID: 753713372}
+  - component: {fileID: 753713373}
   m_Layer: 5
   m_Name: Answer B
   m_TagString: Untagged
@@ -995,6 +996,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &753713373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753713368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b4b4f162c0b5a489f06640ec87f072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrue: 1
+  answer: {fileID: 118051574}
 --- !u!1 &827503760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1050,8 @@ MonoBehaviour:
   - content: Jika kita memperhatikan jam dinding di kamar Andi, membentuk sudut berapakah
       waktu saat Andi akan bergegas untuk mandi?
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 353082056}
   questionManager: {fileID: 1342945716}
@@ -1388,6 +1405,7 @@ GameObject:
   - component: {fileID: 1128749659}
   - component: {fileID: 1128749658}
   - component: {fileID: 1128749660}
+  - component: {fileID: 1128749661}
   m_Layer: 5
   m_Name: Answer A
   m_TagString: Untagged
@@ -1506,6 +1524,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1128749661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128749656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b4b4f162c0b5a489f06640ec87f072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrue: 0
+  answer: {fileID: 1692247453}
 --- !u!1 &1206651255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,6 +1550,7 @@ GameObject:
   - component: {fileID: 1206651258}
   - component: {fileID: 1206651257}
   - component: {fileID: 1206651259}
+  - component: {fileID: 1206651260}
   m_Layer: 5
   m_Name: Answer C
   m_TagString: Untagged
@@ -1636,6 +1669,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1206651260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206651255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b4b4f162c0b5a489f06640ec87f072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrue: 0
+  answer: {fileID: 1883837950}
 --- !u!1001 &1235349543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1754,6 +1801,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 227591853}
   trueAnswer: {fileID: 1570450667}
   falseAnswer: {fileID: 486743102}
+  AnswerA: {fileID: 1128749656}
+  AnswerB: {fileID: 753713368}
+  AnswerC: {fileID: 1206651255}
+  choiceIndex: A1
   isAnswered: 0
   scoreManager: {fileID: 1235349544}
 --- !u!4 &1342945717

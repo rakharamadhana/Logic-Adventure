@@ -404,6 +404,7 @@ MonoBehaviour:
   - content: "Berapa liter minimum bensin yang harus diisi agar Andi bisa sampai
       di sekolah?\r"
     isQuestion: 1
+  index: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 253857333}
   questionManager: {fileID: 1491228962}
@@ -2208,6 +2209,7 @@ GameObject:
   - component: {fileID: 1386459123}
   - component: {fileID: 1386459125}
   - component: {fileID: 1386459124}
+  - component: {fileID: 1386459126}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -2271,6 +2273,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386459122}
   m_CullTransparentMesh: 0
+--- !u!114 &1386459126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386459122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d54ea6d3ef21d43a317f43b6457f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 446752653}
+  nextSlideAfter: 1
+  nextImage: {fileID: 21300000, guid: 9a8d8532da81768459194e034ebbc6f3, type: 3}
 --- !u!1 &1426920307
 GameObject:
   m_ObjectHideFlags: 0
