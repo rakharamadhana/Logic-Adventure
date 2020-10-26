@@ -160,6 +160,8 @@ MonoBehaviour:
   - content: Jika setiap gardu tol kendaraan harus membayar sebesar Rp 8.500, maka
       berapa banyak biaya yang dihabiskan untuk perjalanan tersebut?
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 1069355039}
   questionManager: {fileID: 1920362218}
@@ -2551,6 +2553,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 586490911}
   trueAnswer: {fileID: 607989575}
   falseAnswer: {fileID: 640499204}
+  AnswerA: {fileID: 671908251}
+  AnswerB: {fileID: 2011606499}
+  AnswerC: {fileID: 1810193482}
+  choiceIndex: A6
   isAnswered: 0
   scoreManager: {fileID: 1122397035}
 --- !u!4 &1920362219

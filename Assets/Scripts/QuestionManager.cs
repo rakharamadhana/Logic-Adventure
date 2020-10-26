@@ -26,9 +26,9 @@ public class QuestionManager : MonoBehaviour
     public bool isAnswered = false;
 
     [SerializeField]
-    private ScoreManager scoreManager;
+    private ScoreManager scoreManager = null;
 
-    private int sceneIndex;
+    private int sceneIndex = 0;
 
     private void Start()    
     {
@@ -76,22 +76,16 @@ public class QuestionManager : MonoBehaviour
     void OnClickA()
     {
         PlayerPrefs.SetString(choiceIndex, choiceA);
-        Debug.Log("You choose an answer " + choiceA);
-        Debug.Log(PlayerPrefs.GetString(choiceIndex));
     }
 
     void OnClickB()
     {
         PlayerPrefs.SetString(choiceIndex, choiceB);
-        Debug.Log("You choose an answer " + choiceB);
-        Debug.Log(PlayerPrefs.GetString(choiceIndex));
     }
 
     void OnClickC()
     {
         PlayerPrefs.SetString(choiceIndex, choiceC);
-        Debug.Log("You choose an answer " + choiceC);
-        Debug.Log(PlayerPrefs.GetString(choiceIndex));
     }
 
     public void TrueAnswer()

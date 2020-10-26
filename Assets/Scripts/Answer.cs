@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-
-public class Answer : MonoBehaviour
+﻿
+[System.Serializable]
+public class Answer
 {
-    public bool isTrue;
-    public TextMeshProUGUI answer;
+    public string number;
+    public string answerCode;
+    public string answerKey;    
 }

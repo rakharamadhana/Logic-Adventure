@@ -689,6 +689,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 1575443696}
   trueAnswer: {fileID: 2022949855}
   falseAnswer: {fileID: 665167383}
+  AnswerA: {fileID: 1696175560}
+  AnswerB: {fileID: 889154992}
+  AnswerC: {fileID: 834785944}
+  choiceIndex: 
   isAnswered: 0
   scoreManager: {fileID: 1811556363166774435}
 --- !u!4 &320463437
@@ -1728,6 +1732,8 @@ MonoBehaviour:
     isQuestion: 0
   - content: Ayo ikuti aktivitas Andi hari ini!
     isQuestion: 0
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 1598509699}
   questionManager: {fileID: 320463436}

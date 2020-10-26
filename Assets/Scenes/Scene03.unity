@@ -756,6 +756,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 1798676159}
   trueAnswer: {fileID: 220014186}
   falseAnswer: {fileID: 2049052026}
+  AnswerA: {fileID: 296683290}
+  AnswerB: {fileID: 1723079412}
+  AnswerC: {fileID: 90461156}
+  choiceIndex: A2
   isAnswered: 0
   scoreManager: {fileID: 833432995}
 --- !u!4 &501272770
@@ -1017,6 +1021,8 @@ MonoBehaviour:
     isQuestion: 0
   - content: Berapakah perkiraan volume air yang Andi habiskan untuk mandi ?
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 415123525}
   questionManager: {fileID: 501272769}

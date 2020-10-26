@@ -777,9 +777,9 @@ RectTransform:
   - {fileID: 400162373}
   - {fileID: 1449292244}
   - {fileID: 1352925822}
+  - {fileID: 817075157}
   - {fileID: 198712574}
   - {fileID: 1914155593}
-  - {fileID: 817075157}
   - {fileID: 1814477733}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1717,7 +1717,7 @@ RectTransform:
   m_Children:
   - {fileID: 20021796}
   m_Father: {fileID: 373387660}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1862,6 +1862,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 561006928}
   trueAnswer: {fileID: 198712575}
   falseAnswer: {fileID: 1914155594}
+  AnswerA: {fileID: 406008351}
+  AnswerB: {fileID: 1428112263}
+  AnswerC: {fileID: 2135047928}
+  choiceIndex: A10
   isAnswered: 0
   scoreManager: {fileID: 489987758}
 --- !u!4 &1305877895
@@ -1893,7 +1897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1352925822
 RectTransform:
   m_ObjectHideFlags: 0

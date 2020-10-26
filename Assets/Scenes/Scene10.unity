@@ -283,6 +283,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 388767192}
   trueAnswer: {fileID: 314818887}
   falseAnswer: {fileID: 1688638469}
+  AnswerA: {fileID: 2056965751}
+  AnswerB: {fileID: 260289600}
+  AnswerC: {fileID: 1835222}
+  choiceIndex: A8
   isAnswered: 0
   scoreManager: {fileID: 1526205736}
 --- !u!4 &216491295
@@ -2002,7 +2006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1386839425
 RectTransform:
   m_ObjectHideFlags: 0

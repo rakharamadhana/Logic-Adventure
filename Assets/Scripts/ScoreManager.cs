@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
 {
     // From the inspector, drag & Drop the GameObject holding the Text component used to display the score
     [SerializeField]
-    private TextMeshProUGUI scoreText;
+    private TextMeshProUGUI scoreText = null;
 
     [SerializeField]
     private float addingSpeed = .05f;
@@ -20,14 +20,12 @@ public class ScoreManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             PlayerPrefs.DeleteAll();
-            //PlayerPrefs.SetInt("score", 0);
         }
     }
 
     void Update()
     {
         scoreText.text = "Skor: " + PlayerPrefs.GetInt("score").ToString();
-        //Debug.Log("Adding Score: " + adding);
     }
 
     public IEnumerator AddScore(int scoresToAdd)

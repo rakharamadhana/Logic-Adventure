@@ -1168,6 +1168,8 @@ MonoBehaviour:
 
 '
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 1068877514}
   questionManager: {fileID: 846968745}
@@ -1221,6 +1223,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 1240592887}
   trueAnswer: {fileID: 709587618}
   falseAnswer: {fileID: 1853732639}
+  AnswerA: {fileID: 1532513554}
+  AnswerB: {fileID: 590755168}
+  AnswerC: {fileID: 926873870}
+  choiceIndex: A13
   isAnswered: 0
   scoreManager: {fileID: 1188591759}
 --- !u!4 &846968746

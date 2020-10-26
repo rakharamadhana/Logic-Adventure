@@ -628,6 +628,8 @@ MonoBehaviour:
       dan jarak dari pos ketiga ke pos pertama adalah 4, berapa jarak pos kedua ke
       pos ketiga?"
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 1711174646}
   questionManager: {fileID: 1905414786}
@@ -2687,6 +2689,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 974259676}
   trueAnswer: {fileID: 522610581}
   falseAnswer: {fileID: 1440175399}
+  AnswerA: {fileID: 1203003101}
+  AnswerB: {fileID: 1820224021}
+  AnswerC: {fileID: 2020637603}
+  choiceIndex: A11
   isAnswered: 0
   scoreManager: {fileID: 569941396}
 --- !u!4 &1905414787

@@ -4,21 +4,22 @@ using UnityEngine;
 using TMPro;
 public class AnswerSheet : MonoBehaviour
 {
+    public Answer[] answers;
+
     public TextMeshProUGUI answerSheetContent;
 
     // Start is called before the first frame update
-    void Start()
+    void Start()    
     {
         answerSheetContent.text = "";
 
-        CheckAnswer(1, "A1", "90'");
-        CheckAnswer(2, "A2", "90'");
-        CheckAnswer(3, "A3", "90'");
-        CheckAnswer(4, "A4", "90'");
-        CheckAnswer(5, "A5", "90'");
+        foreach (Answer answer in answers)
+        {
+            CheckAnswer(answer.number, answer.answerCode, answer.answerKey);
+        }
     }
 
-    void CheckAnswer(int index, string question, string key)
+    void CheckAnswer(string index, string question, string key)
     {
         if (PlayerPrefs.GetString(question) == key)
         {

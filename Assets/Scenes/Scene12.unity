@@ -1773,6 +1773,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 1748843417}
   trueAnswer: {fileID: 1338286549}
   falseAnswer: {fileID: 447540603}
+  AnswerA: {fileID: 974775209}
+  AnswerB: {fileID: 2036231694}
+  AnswerC: {fileID: 396865959}
+  choiceIndex: A12
   isAnswered: 0
   scoreManager: {fileID: 592956133}
 --- !u!4 &1371321503
@@ -2557,6 +2561,8 @@ MonoBehaviour:
 
 '
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 982683427}
   questionManager: {fileID: 1371321502}

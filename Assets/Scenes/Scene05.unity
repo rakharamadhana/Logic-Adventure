@@ -405,6 +405,7 @@ MonoBehaviour:
       di sekolah?\r"
     isQuestion: 1
   index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 253857333}
   questionManager: {fileID: 1491228962}
@@ -2365,6 +2366,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 2141408333}
   trueAnswer: {fileID: 294967955}
   falseAnswer: {fileID: 1630758968}
+  AnswerA: {fileID: 1145670402}
+  AnswerB: {fileID: 941603066}
+  AnswerC: {fileID: 1368455172}
+  choiceIndex: A4
   isAnswered: 0
   scoreManager: {fileID: 1078768181}
 --- !u!4 &1491228963

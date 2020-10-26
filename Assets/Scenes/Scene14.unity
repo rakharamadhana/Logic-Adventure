@@ -703,6 +703,8 @@ MonoBehaviour:
   - content: Ayo bantu Andi menentukan makanan dan minuman agar kebutuhan 600 kalori
       tercapai.
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 108276350}
   questionManager: {fileID: 1239923692}
@@ -1482,6 +1484,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 840934673}
   trueAnswer: {fileID: 676892431}
   falseAnswer: {fileID: 1212058339}
+  AnswerA: {fileID: 1287621650}
+  AnswerB: {fileID: 914456209}
+  AnswerC: {fileID: 1198736400}
+  choiceIndex: A14
   isAnswered: 0
   scoreManager: {fileID: 1333222902}
 --- !u!4 &1239923693

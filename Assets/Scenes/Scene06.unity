@@ -1262,6 +1262,10 @@ MonoBehaviour:
   sceneLoader: {fileID: 515864855}
   trueAnswer: {fileID: 1511631785}
   falseAnswer: {fileID: 1129590430}
+  AnswerA: {fileID: 1176944782}
+  AnswerB: {fileID: 1207872107}
+  AnswerC: {fileID: 599168768}
+  choiceIndex: A5
   isAnswered: 0
   scoreManager: {fileID: 1385251095}
 --- !u!4 &764226169
@@ -2780,6 +2784,8 @@ MonoBehaviour:
   - content: "Berapa kecepatan minimun mobil yang dinaiki Andi agar ia dapat sampai
       ke sekolah tepat waktu?\r"
     isQuestion: 1
+  index: 0
+  answerIndex: 0
   typingSpeed: 0.02
   answerContainer: {fileID: 535468704}
   questionManager: {fileID: 764226168}
